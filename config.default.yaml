@@ -75,6 +75,7 @@ augmented_line_connection:
   min_DC_length: 600 # [km] Minimum line length of DC line
 
 cluster_options:
+  focus_weights: false  # Optionally specify the focus weights for the clustering of countries. For instance: DE: 0.8 will distribute 80% of all nodes to Germany and 20% to the rest of the countries.>>>>>>>>>>>>>>>>>>>>>  For Test
   simplify_network:
     to_substations: false # network is simplified to nodes with positive or negative power injection (i.e. substations or offwind connections)
     algorithm: kmeans # choose from: [hac, kmeans]
